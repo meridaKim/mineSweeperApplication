@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(l, layoutParams);
 
-        tableRow[9] = findViewById(R.id.tableRow);
         for (int k = 0; k < 9; k++) {
             tableRow[k] = new TableRow(this);
             tableRow[k].setLayoutParams(layoutParams);
