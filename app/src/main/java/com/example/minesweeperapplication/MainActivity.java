@@ -2,28 +2,22 @@ package com.example.minesweeperapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-
+import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TableLayout;
 import android.widget.TableRow;
-import android.widget.TextView;
-import android.widget.ToggleButton;
 
 public class MainActivity extends AppCompatActivity {
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        TextView countMine = findViewById(R.id.countminetext);
-        ToggleButton breakTbutton = findViewById(R.id.breakbutton);
-
         final TableLayout tableLayout = (TableLayout) findViewById(R.id.table);
         tableLayout.setShrinkAllColumns(true);
-
 
         Button[][] buttons = new Button[9][9];
         for (int i = 0; i < 9; i++) {
