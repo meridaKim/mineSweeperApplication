@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
         LinearLayout l = new LinearLayout(this);
         l.setOrientation(LinearLayout.VERTICAL);
+
         TableLayout table;
         table = (TableLayout) findViewById(R.id.tableLayout);
 
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         TableRow.LayoutParams layoutParams = new TableRow.LayoutParams(
                 TableRow.LayoutParams.WRAP_CONTENT,
                 TableRow.LayoutParams.WRAP_CONTENT, 1.0f);
+
         setContentView(l, layoutParams);
 
         tableRow[9] = findViewById(R.id.tableRow);
@@ -40,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
                     buttons[i][j].setLayoutParams(layoutParams);
                     buttons[i][j].setBackgroundColor(Color.GRAY);
                     tableRow[k].addView(buttons[i][j]);
+                    l.addView(buttons[i][j]);
 
                 }
 
